@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{67246811-AF1D-43A3-8047-CECE9C8813DA}</ProjectGuid>
-    <RootNamespace>GPA</RootNamespace>
-    <ProjectName>Woche6</ProjectName>
+    <ProjectGuid>{E82FE167-4326-4C06-A847-55FEFD9E4B76}</ProjectGuid>
+    <RootNamespace>Woche7</RootNamespace>
+    <ProjectName>Woche7.1</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -65,7 +65,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Woche6.cpp" />
+    <ClCompile Include="..\Listen\listen.cpp" />
+    <ClCompile Include="Readme.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

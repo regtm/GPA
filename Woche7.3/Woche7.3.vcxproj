@@ -11,9 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{67246811-AF1D-43A3-8047-CECE9C8813DA}</ProjectGuid>
-    <RootNamespace>GPA</RootNamespace>
-    <ProjectName>Woche6</ProjectName>
+    <ProjectGuid>{2D11703C-344B-449F-AECC-7966C16C74EE}</ProjectGuid>
+    <RootNamespace>Woche73</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -65,7 +64,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Woche6.cpp" />
+    <ClCompile Include="..\Universum\graphics.cpp" />
+    <ClCompile Include="..\Universum\random.cpp" />
+    <ClCompile Include="..\Universum\universe.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Universum\graphics.h" />
+    <ClInclude Include="..\Universum\random.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

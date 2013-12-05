@@ -11,9 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{67246811-AF1D-43A3-8047-CECE9C8813DA}</ProjectGuid>
-    <RootNamespace>GPA</RootNamespace>
-    <ProjectName>Woche6</ProjectName>
+    <ProjectGuid>{D5DBE28E-77A7-4946-95D7-1984F4E32D25}</ProjectGuid>
+    <RootNamespace>Woche72</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -65,7 +64,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Woche6.cpp" />
+    <ClCompile Include="..\Zahlenfolgen\zahlenfolgen.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

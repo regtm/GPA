@@ -19,7 +19,7 @@ void initialize()
 		x_positions[i] = random_double_between(0.1 * SCREEN_WIDTH, 0.9 * SCREEN_WIDTH);
 		y_positions[i] = random_double_between(0.1 * SCREEN_HEIGHT, 0.9 * SCREEN_HEIGHT);
 		colors[i] = random_word() / 256;
-		masses[i] = random_double_between(0.1, 1);
+		masses[i] = random_double_between(0.001, 1);
 	}
 }
 

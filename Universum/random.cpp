@@ -20,6 +20,6 @@ double random_double_between(double lower, double upper)
 {
 	// Folgendes entspricht noch nicht der Spezifikation,
 	// sieht aber immerhin schon ganz nett aus :)
-	return random_double() * upper +(lower*0.5);
-	//return random_double() * (upper - lower) + lower;
+	//return random_double() * upper +(lower*0.5);
+	return random_double() * (upper - lower) + lower;
 }

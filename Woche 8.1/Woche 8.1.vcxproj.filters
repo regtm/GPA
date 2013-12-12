@@ -15,14 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\..\Dropbox\Uni\GPA\8.1\Suchen\main.cpp">
+    <ClCompile Include="Suchen\main.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\..\..\Dropbox\Uni\GPA\8.1\Suchen\primzahlen.cpp">
+    <ClCompile Include="Suchen\primzahlen.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\..\..\Dropbox\Uni\GPA\8.1\Suchen\suchen.cpp">
+    <ClCompile Include="Suchen\suchen.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Suchen\primzahlen.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Suchen\suchen.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

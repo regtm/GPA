@@ -11,9 +11,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\..\Dropbox\Uni\GPA\8.1\Suchen\main.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Dropbox\Uni\GPA\8.1\Suchen\primzahlen.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Dropbox\Uni\GPA\8.1\Suchen\suchen.cpp" />
+    <ClCompile Include="Suchen\main.cpp" />
+    <ClCompile Include="Suchen\primzahlen.cpp" />
+    <ClCompile Include="Suchen\suchen.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Suchen\primzahlen.h" />
+    <ClInclude Include="Suchen\suchen.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{18DB3BEA-7F58-4870-91A0-6BB67575338F}</ProjectGuid>

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Listen", "Listen\Listen.vcxproj", "{A9709FE3-0AF7-4334-81EC-436C73FA5B78}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Zahlenfolgen", "Zahlenfolgen\Zahlenfolgen.vcxproj", "{754267C4-DD19-4FDC-B6F5-F4E715509F5B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Universum", "Universum\Universum.vcxproj", "{8C5F8488-7906-4AF3-8A07-68783EC542B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9709FE3-0AF7-4334-81EC-436C73FA5B78}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A9709FE3-0AF7-4334-81EC-436C73FA5B78}.Debug|Win32.Build.0 = Debug|Win32
+		{A9709FE3-0AF7-4334-81EC-436C73FA5B78}.Release|Win32.ActiveCfg = Release|Win32
+		{A9709FE3-0AF7-4334-81EC-436C73FA5B78}.Release|Win32.Build.0 = Release|Win32
+		{8C5F8488-7906-4AF3-8A07-68783EC542B6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8C5F8488-7906-4AF3-8A07-68783EC542B6}.Debug|Win32.Build.0 = Debug|Win32
+		{8C5F8488-7906-4AF3-8A07-68783EC542B6}.Release|Win32.ActiveCfg = Release|Win32
+		{8C5F8488-7906-4AF3-8A07-68783EC542B6}.Release|Win32.Build.0 = Release|Win32
+		{754267C4-DD19-4FDC-B6F5-F4E715509F5B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{754267C4-DD19-4FDC-B6F5-F4E715509F5B}.Debug|Win32.Build.0 = Debug|Win32
+		{754267C4-DD19-4FDC-B6F5-F4E715509F5B}.Release|Win32.ActiveCfg = Release|Win32
+		{754267C4-DD19-4FDC-B6F5-F4E715509F5B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

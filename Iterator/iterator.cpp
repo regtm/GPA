@@ -10,7 +10,11 @@ void iterieren(int limit)
 	
 	vector<string> abc = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
 	
-for (vector<string>::iterator li = abc.begin(); li != limit  ; li++)
+	int end;
+	vector<string>::iterator li;
+
+	//Wie werden Variablen verschiedener Typen im gleichen Schleifenrumps initialisiert?
+	for (end=0,li = abc.begin(); end != limit; ++li, ++end)
 	{
 		cout << *li;
 	}

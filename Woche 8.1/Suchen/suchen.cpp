@@ -45,30 +45,30 @@ iter binaere_suche(iter von, iter bis, int gesuchte_zahl)
 {
 	const iter nicht_gefunden = bis;
 	
-	iter l = von;
-	iter m = l+(bis-von-1) / 2;
-	iter r = bis;
+	//iter l = von;
+	//iter m = l+(bis-von-1) / 2;
+	//iter r = bis;
 	
-	while (*m != gesuchte_zahl)
+	while (von !=bis)
 	{
-		if (l > r)
-		{
-			return nicht_gefunden;
-		}
+		iter mitte = von + (bis - von) / 2;
+		
+		
 
-		else if (*m > gesuchte_zahl)
+		if (*mitte > gesuchte_zahl)
 		{
-			r = m - 1;
-			m = l + (r-l);
+			bis = mitte;
 
 		}
-		else if (*m < gesuchte_zahl)
+		else if (*mitte < gesuchte_zahl)
 		{
-			l = m + 1;
-			m =r - (r - l); 
-
+			von = mitte + 1;
+		}
+		else
+		{
+			return mitte;
 		}
 	}
 	
-	return m;
+	return nicht_gefunden;
 }

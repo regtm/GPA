@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Iterator", "Iterator\Iterat
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Woche 8.1", "Woche 8.1\Woche 8.1.vcxproj", "{18DB3BEA-7F58-4870-91A0-6BB67575338F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Mengen", "..\..\..\Downloads\Woche08\Mengen\Mengen.vcxproj", "{F1FF186A-C251-4B93-9BB1-0D4FB99C64D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -45,6 +47,10 @@ Global
 		{18DB3BEA-7F58-4870-91A0-6BB67575338F}.Debug|Win32.Build.0 = Debug|Win32
 		{18DB3BEA-7F58-4870-91A0-6BB67575338F}.Release|Win32.ActiveCfg = Release|Win32
 		{18DB3BEA-7F58-4870-91A0-6BB67575338F}.Release|Win32.Build.0 = Release|Win32
+		{F1FF186A-C251-4B93-9BB1-0D4FB99C64D0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F1FF186A-C251-4B93-9BB1-0D4FB99C64D0}.Debug|Win32.Build.0 = Debug|Win32
+		{F1FF186A-C251-4B93-9BB1-0D4FB99C64D0}.Release|Win32.ActiveCfg = Release|Win32
+		{F1FF186A-C251-4B93-9BB1-0D4FB99C64D0}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,6 +10,11 @@ namespace fs = std::tr2::sys;
 
 
 
+// 9.1
+//	Die Wahrscheinlichkeit beträgt (1/2)^256
+
+
+
 
 
 void walk_directory(fs::path root)

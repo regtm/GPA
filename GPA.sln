@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Woche8.3", "..\..\..\Downlo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Duplikate", "..\..\..\Downloads\Woche09\Duplikate\Duplikate.vcxproj", "{770C3E92-C517-487D-B186-1BE87B626DB1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9.x", "9.x\9.x.vcxproj", "{DD3136A5-C21E-4E21-8E05-565EC1B22FEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -57,6 +59,10 @@ Global
 		{770C3E92-C517-487D-B186-1BE87B626DB1}.Debug|Win32.Build.0 = Debug|Win32
 		{770C3E92-C517-487D-B186-1BE87B626DB1}.Release|Win32.ActiveCfg = Release|Win32
 		{770C3E92-C517-487D-B186-1BE87B626DB1}.Release|Win32.Build.0 = Release|Win32
+		{DD3136A5-C21E-4E21-8E05-565EC1B22FEF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DD3136A5-C21E-4E21-8E05-565EC1B22FEF}.Debug|Win32.Build.0 = Debug|Win32
+		{DD3136A5-C21E-4E21-8E05-565EC1B22FEF}.Release|Win32.ActiveCfg = Release|Win32
+		{DD3136A5-C21E-4E21-8E05-565EC1B22FEF}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

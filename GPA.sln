@@ -19,7 +19,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Woche8.3", "..\..\..\Downlo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Duplikate", "..\..\..\Downloads\Woche09\Duplikate\Duplikate.vcxproj", "{770C3E92-C517-487D-B186-1BE87B626DB1}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9.x", "9.x\9.x.vcxproj", "{DD3136A5-C21E-4E21-8E05-565EC1B22FEF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9.1", "9.x\9.x.vcxproj", "{DD3136A5-C21E-4E21-8E05-565EC1B22FEF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9.2", "9.x\Woche09\Turtle\Turtle.vcxproj", "{BE13BBCF-9394-421D-98AA-51D10213AA48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{DD3136A5-C21E-4E21-8E05-565EC1B22FEF}.Debug|Win32.Build.0 = Debug|Win32
 		{DD3136A5-C21E-4E21-8E05-565EC1B22FEF}.Release|Win32.ActiveCfg = Release|Win32
 		{DD3136A5-C21E-4E21-8E05-565EC1B22FEF}.Release|Win32.Build.0 = Release|Win32
+		{BE13BBCF-9394-421D-98AA-51D10213AA48}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BE13BBCF-9394-421D-98AA-51D10213AA48}.Debug|Win32.Build.0 = Debug|Win32
+		{BE13BBCF-9394-421D-98AA-51D10213AA48}.Release|Win32.ActiveCfg = Release|Win32
+		{BE13BBCF-9394-421D-98AA-51D10213AA48}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

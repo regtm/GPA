@@ -11,9 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{DD3136A5-C21E-4E21-8E05-565EC1B22FEF}</ProjectGuid>
-    <RootNamespace>My9x</RootNamespace>
-    <ProjectName>9.1</ProjectName>
+    <ProjectGuid>{29C5F455-E084-4C87-9193-8F58E4942516}</ProjectGuid>
+    <RootNamespace>My92</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -64,17 +63,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Woche09\Duplikate\duplikate.cpp" />
-    <ClCompile Include="Woche09\Duplikate\sha2.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Woche09\Duplikate\Duplikate.vcxproj" />
-    <None Include="Woche09\Duplikate\Duplikate.vcxproj.filters" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Woche09\Duplikate\sha2.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

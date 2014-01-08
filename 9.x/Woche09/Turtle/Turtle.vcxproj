@@ -13,6 +13,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{BE13BBCF-9394-421D-98AA-51D10213AA48}</ProjectGuid>
     <RootNamespace>Turtle</RootNamespace>
+    <ProjectName>9.2</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

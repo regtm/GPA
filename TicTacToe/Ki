@@ -1,5 +1,7 @@
 Prioritäten der KI
 
+0 selber Siegen
+1 gegnerischen Sieg verhindern 
 1 verhindern gengerischen Siegs > eigener Sieg (2 Steine in einer Reihe)
 2 Bewertung der Felder nach Anzahl der noch möglichen Reihen, Spalten und Diagonalen
 3 Bei gleicher Bewertung zufällig wählen
@@ -69,3 +71,8 @@ O X O
 Zufällig eines der Felder mit gleicher Bewertung wählen
 
 ... Sieg ist nur bei Fehler des menschlichen Spielers möglich. KI vs KI endet immer unentschieden.
+
+O O _
+_ _ _
+X X _
+

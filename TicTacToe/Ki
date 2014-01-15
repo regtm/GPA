@@ -1,0 +1,71 @@
+Prioritäten der KI
+
+1 verhindern gengerischen Siegs > eigener Sieg (2 Steine in einer Reihe)
+2 Bewertung der Felder nach Anzahl der noch möglichen Reihen, Spalten und Diagonalen
+3 Bei gleicher Bewertung zufällig wählen
+
+
+=> erstes Feld ist immer das mittlere Feld
+
+Startwerte = Anzahl der möglichen Spalten, Reihen und Diagonalen(leeres Feld)
+3 2 3
+2 4 2
+3 2 3
+
+KI:
+0 0 0
+0 x 0
+0 0 0
+
+Überprüfen ob der Gegenspieler 2 Steine in einer Reihe hat oder die KI 2 Steine in einer Reihe hat = > false
+
+Human:
+O 0 0
+0 X 0
+0 0 0
+
+Bewertung:
+O 1 2
+1 X 2
+2 2 2
+
+Überprüfen ob der Gegenspieler 2 Steine in einer Reihe hat oder die KI 2 Steine in einer Reihe hat = > false
+Züfällig eine der Ecken wählen
+
+KI:
+O 0 0
+0 X 0
+0 0 X
+
+Human
+O 0 O
+0 X 0
+0 0 X
+
+Bewertung:
+O 1 O
+1 X 1
+1 2 X
+
+Überprüfen ob der Gegenspieler 2 Steine in einer Reihe hat oder die KI 2 Steine in einer Reihe hat = > true
+Verhindern des Sieges hat Priorität vor Feldwertung
+
+KI:
+O X O
+1 X 1
+1 2 X
+
+Human:
+O X O
+0 X 0
+0 O X
+
+Bewertung:
+O X O
+1 X 1
+0 O X
+
+Überprüfen ob der Gegenspieler 2 Steine in einer Reihe hat oder die KI 2 Steine in einer Reihe hat => false
+Zufällig eines der Felder mit gleicher Bewertung wählen
+
+... Sieg ist nur bei Fehler des menschlichen Spielers möglich. KI vs KI endet immer unentschieden.

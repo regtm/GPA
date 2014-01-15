@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9.1", "9.x\9.x.vcxproj", "{
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9.2", "9.x\Woche09\Turtle\Turtle.vcxproj", "{BE13BBCF-9394-421D-98AA-51D10213AA48}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TicTacToe", "TicTacToe\TicTacToe.vcxproj", "{C9F57D02-83A6-43FC-AAAC-1AFF382789D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -69,6 +71,10 @@ Global
 		{BE13BBCF-9394-421D-98AA-51D10213AA48}.Debug|Win32.Build.0 = Debug|Win32
 		{BE13BBCF-9394-421D-98AA-51D10213AA48}.Release|Win32.ActiveCfg = Release|Win32
 		{BE13BBCF-9394-421D-98AA-51D10213AA48}.Release|Win32.Build.0 = Release|Win32
+		{C9F57D02-83A6-43FC-AAAC-1AFF382789D9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C9F57D02-83A6-43FC-AAAC-1AFF382789D9}.Debug|Win32.Build.0 = Debug|Win32
+		{C9F57D02-83A6-43FC-AAAC-1AFF382789D9}.Release|Win32.ActiveCfg = Release|Win32
+		{C9F57D02-83A6-43FC-AAAC-1AFF382789D9}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

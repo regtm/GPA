@@ -3,12 +3,12 @@
 #include <string>
 using namespace std;
 
-vector<string> board{"7","8","9","4","5","6","1","2","3"};
-int played_round = 0;
+vector<string> board{ "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+int played_round = 1;
 
 string ident()
 {
-	if (played_round % 2 != 0)
+	if (played_round % 2 == 0)
 	{
 		return "X";
 	}
@@ -76,6 +76,7 @@ int main()
 
 		cout << "\t" << ident() << " make your move:";
 		int move = gpa::read_int("");
+		move = move - 1;
 
 
 		auto it = board.begin();
@@ -83,14 +84,15 @@ int main()
 
 		if (board.at(move) != "X" && board.at(move) != "O")
 		{
-			board.erase(it + move);
-			board.insert(it + move, ident());
+			it = board.erase(it + move);
+			board.insert(it, ident());
 		}
 		else{
+			played_round--;
 			cout << "\tInvalid move!";
 		}
 
-			draw_board();
+
 
 	}
 	if (played_round != 9)

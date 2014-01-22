@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9.2", "9.x\Woche09\Turtle\T
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TicTacToe", "TicTacToe\TicTacToe.vcxproj", "{C9F57D02-83A6-43FC-AAAC-1AFF382789D9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tetris", "Woche11\Tetris\Tetris.vcxproj", "{72AA82E4-90B1-45DF-A6D6-AF1597D8BCE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -75,6 +77,10 @@ Global
 		{C9F57D02-83A6-43FC-AAAC-1AFF382789D9}.Debug|Win32.Build.0 = Debug|Win32
 		{C9F57D02-83A6-43FC-AAAC-1AFF382789D9}.Release|Win32.ActiveCfg = Release|Win32
 		{C9F57D02-83A6-43FC-AAAC-1AFF382789D9}.Release|Win32.Build.0 = Release|Win32
+		{72AA82E4-90B1-45DF-A6D6-AF1597D8BCE5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{72AA82E4-90B1-45DF-A6D6-AF1597D8BCE5}.Debug|Win32.Build.0 = Debug|Win32
+		{72AA82E4-90B1-45DF-A6D6-AF1597D8BCE5}.Release|Win32.ActiveCfg = Release|Win32
+		{72AA82E4-90B1-45DF-A6D6-AF1597D8BCE5}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

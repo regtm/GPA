@@ -3,12 +3,14 @@
 #include <gpa/input>
 #include <vector>
 #include <map>
+#include <time.h>
 using namespace std;
 
 int height = 21;
 int width = 12;
 int row = 12;
 int score = 0;
+double time_till_fall = 0.5;
 map <int, int> board;
 
 void draw_board(vector<int> active_block)
@@ -21,7 +23,7 @@ void draw_board(vector<int> active_block)
 	unsigned char corner_l = 200;
 	unsigned char corner_r = 188;
 	unsigned char block = 219;
-	unsigned char leer = 32;
+	unsigned char leer = 246;
 
 	int blocks = 0;
 
@@ -40,7 +42,7 @@ void draw_board(vector<int> active_block)
 			{
 				cout << vertical_pipe;
 			}
-			else
+			else if (blocks > 12)
 			{
 				cout << leer;
 			}
@@ -99,7 +101,6 @@ void init()
 {
 	vector<int> active_block = { 0, 0, 0, 0, 0};
 	create_map(height, width);
-	draw_board(active_block);
 }
 
 bool game_over(int doubled)
@@ -117,7 +118,7 @@ bool game_over(int doubled)
 vector<int> random_block()
 {
 	int random_start = zufallszahl_kleiner_als(9)+12;
-	int random_block =  zufallszahl_kleiner_als(6);
+	int random_block = 0; // zufallszahl_kleiner_als(6);
 	int random_direction = zufallszahl_kleiner_als(4);
 
 	vector<int> active_block;
@@ -239,8 +240,10 @@ vector<int> rotate(vector<int> active_block)
 
 vector<int> move(vector<int> active_block)
 {
-
+	if (taste_wurde_gedrueckt())
+	{
 		int key = gedrueckte_taste();
+
 
 		if (key == 72)
 		{
@@ -265,7 +268,8 @@ vector<int> move(vector<int> active_block)
 				active_block = { active_block[0] + row, active_block[1] + row, active_block[2] + row, active_block[3] + row, active_block[4] };
 			}
 		}
-	
+
+	}
 		return active_block;
 	
 }
@@ -277,7 +281,7 @@ void checkfullrow()
 	for (int r = height*width; r > 12; r -= row)
 	{
 	
-		if (
+		while (
 			board[r + 1] == 2 &&
 			board[r + 2] == 2 &&
 			board[r + 3] == 2 &&
@@ -304,7 +308,6 @@ void checkfullrow()
 				board[rx + 10] = board[rx - 2];
 			}
 			++score;
-			checkfullrow();
 		}
 
 	}
@@ -313,31 +316,45 @@ void checkfullrow()
 }
 
 
+void wait(double seconds)
+{
+clock_t wait;
+wait = clock() + seconds*CLOCKS_PER_SEC;
+while (clock() < wait){};
+}
+
 
 void main()
 {
 	init();
 
-		vector<int> active_block;
-		while (!game_over(0))
+	vector<int> active_block;
+
+	while (!game_over(0))
+	{
+		active_block = random_block();
+		write_block(active_block);
+		draw_board(active_block);
+		while (vertical_collide(active_block) == 0)
 		{
-			active_block = random_block();
-			write_block(active_block);
-			while (vertical_collide(active_block) == 0)
+			erase_block(active_block);
+			
+			clock_t wait;
+			wait = clock() + time_till_fall*CLOCKS_PER_SEC;
+			while (clock() < wait)
 			{
 				erase_block(active_block);
-				while (taste_wurde_gedrueckt())
-				{
 				active_block = move(active_block);
-				}
-				warte(100);
-				active_block = fall(active_block);
+				write_block(active_block);
 				draw_board(active_block);
-				
 			}
-			save_block(active_block);
-			checkfullrow();
+			erase_block(active_block);
+			active_block = fall(active_block);
+			write_block(active_block);
 			draw_board(active_block);
-
 		}
+		save_block(active_block);
+		checkfullrow();
+		draw_board(active_block);
+	}
 }
